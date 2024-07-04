@@ -13,3 +13,4 @@ iplist = [5060, "80", 55, "10.0.0.1", "10.20.30.1", "ssh"]
 # display only ip addresses
 print(iplist[3:5])
 
+# solution I coded is none of the solutions posted on lab 19

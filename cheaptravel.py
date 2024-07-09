@@ -15,7 +15,8 @@ def search_cheapest_flights(origin, destination, departure_date):
             originLocationCode=origin,
             destinationLocationCode=destination,
             departureDate=departure_date,
-            adults=1
+            adults=1,
+            currencyCode= 'USD'
         )
 
         # Process the response to find the cheapest flight

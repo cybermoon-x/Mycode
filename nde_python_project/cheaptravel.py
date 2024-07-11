@@ -4,8 +4,8 @@ from amadeus import Client, ResponseError
 
 # Initialize the Amadeus client with your API credentials
 amadeus = Client(
-    client_id='VB3cXEYYBXgcWaEsfhkjjcLGIN4sV7GU',
-    client_secret='6Sft5emSJOdtggOT'
+    client_id='YOUR CLIENT KEY',
+    client_secret='YOUR CLIENT SECRET KEY'
 )
 
 def search_cheapest_flights(origin, destination, departure_date):

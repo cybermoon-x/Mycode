@@ -8,8 +8,8 @@ init(autoreset=True)
 
 # Initialize the Amadeus client with your API credentials
 amadeus = Client(
-    client_id='8tGTePLX0xp1TpB1sabBGiAka73vQOjQ',
-    client_secret='tNhlY1foOXSGKAXi'
+    client_id='YOUR CLIENT KEY',
+    client_secret='YOUR CLIENT SECRET KEY'
 )
 
 

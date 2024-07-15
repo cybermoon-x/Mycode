@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""SOTO FLIGHTS"""
+"""My app will help discover your next adventures with low flight fares.I invite you to a cup of coffee in the air."""
 
 import time
 from amadeus import Client, ResponseError
@@ -10,8 +12,8 @@ init(autoreset=True)
 
 # Initialize the Amadeus client with your API credentials
 amadeus = Client(
-    client_id='YOUR CLIENT KEY',
-    client_secret='YOUR CLIENT SECRET KEY'
+    client_id='YOUR_CLIENT-KEY',
+    client_secret='YOU_CLIENT_SECRET_KEY'
 )
 
 def search_airports_by_city(city_name):
@@ -46,7 +48,7 @@ def search_cheapest_flights(origin, destination, departure_date, return_date=Non
         with Progress() as progress:
             task = progress.add_task("[cyan]Searching for flights...", total=100)
             for _ in range(10):
-                time.sleep(1)  # Simulate delay for demonstration purposes
+                time.sleep(0)  # Simulate delay for demonstration purposes
                 progress.update(task, advance=10)
 
         if return_date:

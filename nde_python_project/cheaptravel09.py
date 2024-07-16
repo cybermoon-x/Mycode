@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """SOTO FLIGHTS"""
-"""My app will help discover your next adventures with low flight fares.I invite you to a cup of coffee in the air."""
+"""My app will help you discover your next adventures with low flight fares."""
+"""I invite you to a cup of coffee in the air."""
 
 import time
 from amadeus import Client, ResponseError
@@ -12,8 +13,8 @@ init(autoreset=True)
 
 # Initialize the Amadeus client with your API credentials
 amadeus = Client(
-    client_id='YOUR_CLIENT-KEY',
-    client_secret='YOU_CLIENT_SECRET_KEY'
+    client_id='RbbrrFK8evfLKUGxYh9ASzc3WcQ7yAb7',
+    client_secret='GtvLknVkuWrYiAxh'
 )
 
 def search_airports_by_city(city_name):

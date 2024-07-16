@@ -13,8 +13,8 @@ init(autoreset=True)
 
 # Initialize the Amadeus client with your API credentials
 amadeus = Client(
-    client_id='RbbrrFK8evfLKUGxYh9ASzc3WcQ7yAb7',
-    client_secret='GtvLknVkuWrYiAxh'
+    client_id='YOUR_CLIENT_KEY',
+    client_secret='YOUR_CLIENT_SECRET_KEY'
 )
 
 def search_airports_by_city(city_name):
@@ -49,7 +49,7 @@ def search_cheapest_flights(origin, destination, departure_date, return_date=Non
         with Progress() as progress:
             task = progress.add_task("[cyan]Searching for flights...", total=100)
             for _ in range(10):
-                time.sleep(0)  # Simulate delay for demonstration purposes
+                time.sleep(1)  # Simulate delay for demonstration purposes
                 progress.update(task, advance=10)
 
         if return_date:

@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""SOTO FLIGHTS"""
+"""My app will help you discover your next adventures with low flight fares."""
+"""I invite you to a cup of coffee in the air."""
 
 import time
 from amadeus import Client, ResponseError
